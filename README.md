@@ -71,7 +71,7 @@ public static class Program
 }
 ```
 
-From decompiled code we can see that instead of recursive call, actual code has been changed to ```whule(true)``` loop which doesn't create new stack on each iteration.
+From decompiled code we can see that instead of recursive call, actual code has been changed to ```while(true)``` loop which doesn't create new stack on each iteration.
 Any build configuration for any platform gives an assembly which is tail-optimized on IL level.
 
 |Configuration|Platform|Tail Optimized|
